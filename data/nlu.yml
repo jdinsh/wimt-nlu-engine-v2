@@ -8,23 +8,13 @@ nlu:
 
 - lookup: application
   examples: |
-    - client management
-    - Account360 
+    - client management 
 
-
-- regex: account_number
-  examples: |
-    - \d{10,12}
-- intent: inform
-  examples: |
-    - my account number is [1234567891](account_number)
-    - This is my account number [1234567891](account_number)
 
 - intent: show_customer_profile
   examples: |
-    - Open [Allen Smith](PERSON) profile in [client management](application)
-    - Open [Allen Smith](PERSON) profile in [Account360](application) 
-    - Open [Account360](application) 
+    - Open [Allen Smith](PERSON)'s profile in [client management](application)  
+    - Open [Allen Smith](PERSON)'s profile 
 
 - intent: show_balance
   examples: |
